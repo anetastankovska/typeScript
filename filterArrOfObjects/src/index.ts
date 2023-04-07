@@ -13,5 +13,15 @@ const filterByProperty = (people: Person[], property: string, value: string) => 
     return filteredResult;
 }
 
+const betterFilter = (people: Person[], property: string, value: string) => {
+    const filteredResult = people.filter(person => property === "age"
+    ? person.age === parseInt(value) : person.gender === value);
+    return filteredResult;
+}
+
+
 console.log(filterByProperty(people, "age", "31"));
 console.log(filterByProperty(people, "gender", "male"));
+console.log("--------------------")
+console.log(betterFilter(people, "age", "31"));
+console.log(betterFilter(people, "gender", "male"));
