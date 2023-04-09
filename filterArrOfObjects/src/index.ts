@@ -19,9 +19,16 @@ const betterFilter = (people: Person[], property: string, value: string) => {
     return filteredResult;
 }
 
+const shortestFilter = (people: Person[], property: string, value: string | number): Person[] => {
+    return people.filter(person => person[property as keyof Person] === value);
+}
+
 
 console.log(filterByProperty(people, "age", "31"));
 console.log(filterByProperty(people, "gender", "male"));
 console.log("--------------------")
 console.log(betterFilter(people, "age", "31"));
 console.log(betterFilter(people, "gender", "male"));
+console.log("--------------------")
+console.log(shortestFilter(people, "age", "31"));
+console.log(shortestFilter(people, "gender", "male"));
