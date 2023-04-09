@@ -19,7 +19,7 @@ const filterByProperty2 = (people: Person[], property: string, value: string) =>
     return filteredResult;
 }
 
-const filterByProperty3 = (people: Person[], property: string, value: string) => {
+const filterByProperty3 = (people: Person[], property: string, value: string | number) => {
     return people.filter((person) => person[property] === value);
 }
 
