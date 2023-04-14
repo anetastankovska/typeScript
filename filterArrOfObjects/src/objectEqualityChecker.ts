@@ -23,7 +23,6 @@ const filterByProperty3 = (people: Person[], property: string, value: string | n
     return people.filter((person) => person[property] === value);
 }
 
-
 const filterByProperty4 = (people: Person[], property: string, value: string | number): Person[] => {
     return people.filter(person => person[property as keyof Person] === value);
 }
