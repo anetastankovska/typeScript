@@ -1,5 +1,5 @@
 {
-  "name": "filterarrofobjects",
+  "name": "helpers",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,8 +13,7 @@
   },
   "dependencies": {
     "ts-node": "^10.9.1",
-    "typescript": "^5.0.3",
-    "lodash-es": "^4.17.15"
+    "typescript": "^5.0.3"
   }
 }
 
