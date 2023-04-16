@@ -1,6 +1,6 @@
 import { Person, Gender } from "./constants";
 
-const people = [{name: "Jill", age: 30, gender: Gender.FEMALE}, {name: "Bob", age: 25, gender: Gender.MALE}, {name: "John", age: 35, gender: Gender.male}]
+const people = [{name: "Jill", age: 30, gender: Gender.FEMALE}, {name: "Bob", age: 25, gender: Gender.MALE}, {name: "John", age: 35, gender: Gender.MALE}]
 
 const filterByProperty1 = (people: Person[], property: string, value: string) => {
     let filteredResult = [];
