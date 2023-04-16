@@ -5,7 +5,7 @@ export interface Person {
 }
 
 export enum Gender {
-    male = "male",
-    female = "female",
-    undefined = "undefined"
+    MALE = "male",
+    FEMALE = "female",
+    UNDEFINED = "undefined"
 }
