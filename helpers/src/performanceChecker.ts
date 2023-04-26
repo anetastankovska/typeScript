@@ -14,8 +14,8 @@ const testRun = (func, o1, o2, iterations) => {
 const areObjectsEqualBad = (obj1, obj2) => JSON.stringify(obj1) === JSON.stringify(obj2);
 const areObjectsEqualGood = (obj1, obj2) => areObjectsEqual(obj1, obj2);
 
-// testRun(areObjectsEqualBad, obj1.from, obj1.to, 10000);
-// testRun(objectEqual, obj1.from, obj1.to, 10000);
-console.log(areObjectsEqualBad(obj1, obj2), areObjectsEqualGood(obj1, obj2));
+testRun(areObjectsEqualBad, obj1.from, obj1.to, 1000000);
+testRun(areObjectsEqual, obj1.from, obj1.to, 1000000);
+// console.log(areObjectsEqualBad(obj1, obj2), areObjectsEqualGood(obj1, obj2));
 
 
